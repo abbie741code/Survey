@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adobe讓師生擁抱創意積極參與</title>
+
+    <!-- 網址縮圖 -->
+    <meta property="og：url" content="#" />
+    <meta property="og：type" content="website" />
+    <meta property="og：title" content="Adobe讓師生擁抱創意積極參與" />
+    <meta
+      property="og：description"
+      content="Adobe 深信，創意力與協作能力在課堂上將發揮強大潛能。為了提供更豐富及完整的服務，Adobe 現在誠摯邀請您參與以下問卷調查，您的回饋將有助於學生與校園邁向成功的創意之路。"
+    />
+    <meta
+      property="og：image"
+      content="https://adbe-events.com/images/adobe_share.png"
+    />
+    <meta
+      name="description"
+      content="Adobe 深信，創意力與協作能力在課堂上將發揮強大潛能。為了提供更豐富及完整的服務，Adobe 現在誠摯邀請您參與以下問卷調查，您的回饋將有助於學生與校園邁向成功的創意之路。"
+    />
+    <!-- 引用bs的css (CDN) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+
+    <!-- 引用font awesome 6.2.1  -->
+    <!-- <link rel="stylesheet" href="fontawesome-free-6.2.1-web/css/all.css" /> -->
+    <!-- 引bs-icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+
+    <!-- 引用favicon (local自行放） -->
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <!-- 自行設定css -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <style>
+      * {
+        /* outline: 1px solid rgb(255, 173, 213); */
+      }
+    </style>
+  </head>
+
+  <body id="page-4">
+    <div class="banner">
+      <!-- Desktop banner -->
+      <img src="images/banner-1920x350.jpg" class="d-none d-md-block" />
+
+      <!-- Mobile banner -->
+      <img src="images/banner-375x280.jpg" class="d-md-none" />
+    </div>
+
+    <form action="" id="myForm">
+      <div class="container d-flex justify-content-center">
+        <div class="content">
+          <!-- Question -->
+          <div class="answer mt-4">
+            4.
+            承上題，請推薦一個能負責活動協辦的單位(例如學校電算中心或是相關設計系所)？
+          </div>
+
+          <!-- answer -->
+          <div class="answer mt-4">
+            <div class="option mb-2 p-2 rounded">
+              <input
+                type="text"
+                class="border-0 border-bottom border-dark rounded-0 bg-transparent mt-1 mx-1 w-100 input-write"
+                placeholder="一個能負責活動協辦的單位"
+              />
+            </div>
+          </div>
+
+          <!-- btn -->
+          <div class="text-center mt-4">
+            <button type="submit" class="btn btn-danger px-5" id="nextBtn">
+              <span class=""> 下一題 </span>
+              <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <!-- 引用bs的js (CDN) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      document
+        .getElementById("nextBtn")
+        .addEventListener("click", function (event) {
+          event.preventDefault(); // 防止預設的表單提交行為
+
+          // 在這裡進行表單資料驗證或其他操作
+
+          var form = document.getElementById("myForm");
+          var formData = new FormData(form);
+          // 這裡可以使用AJAX或其他方法將表單資料提交到伺服器端
+
+          // 導向下一個網頁
+          window.location.href = "survey_q5.html";
+        });
+    </script>
+
+    <script>
+      
+    </script>
+
+    <!-- 滑鼠滑過去, 就算移開 也可以有顏色的效果 -->
+    <!-- <script script src="js/fixcolor.js"></script> -->
+
+    <!-- jq-3.6.0.js & popper.js & bs.js (local自行放） -->
+    <!-- <script type="text/javascript" src="js/jquery-3.6.0.js"></script>
+    <script src="bootstrap-5.2.2-dist/js/popper.min.js"></script>
+    <script src="bootstrap-5.2.2-dist/js/bootstrap.min.js"></script> -->
+  </body>
+</html>
