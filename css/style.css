@@ -1,0 +1,75 @@
+html{
+  height: 100%;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	/* font-size: 1rem; */
+}
+
+.banner img {
+	width: 100%;
+
+
+}
+
+
+.form-container,
+.option,
+textarea{
+ background-color: #FFF4F4;
+ 
+}
+
+
+
+.txt-danger,
+.btn-danger{
+	background-color: #DC291E !important;
+}
+
+label{
+	display: inline !important;
+}
+a{
+	color:  inherit
+}
+
+
+button{
+	transition: transform 0.2s ease-in-out;
+}
+button:hover{
+	transform: scale(1.1);
+}
+.content{
+	min-width: 500px;
+}
+
+@media screen and (max-width: 768px) {
+  .content{
+		min-width: 332px;
+	}
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.form-input-effect:hover {
+	border-bottom:1px solid #ffffff ;
+}
+
+/* fix-color-container */
+.active {
+  background-color: #DC291E ;
+	color: #ffffff;
+}
+
+ .input-write{
+	color:  #000000 !important;
+}
+ 
